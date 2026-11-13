@@ -12,6 +12,7 @@ It delegates to Helix workflows
 - `tc-review-workflow`
 - `tc-change-format-workflow`, `create-bug-workflow`
 - `retest-bug-workflow`
+
 Helix reference files (`session-start-context.md`, `qa-closing-shared.md`). Without Helix, only the manual execute flow (`references/execute.md`) and the OLS/PYR rules work.
 
 Helix: https://github.com/Thitic9203/helix (install steps are in its README).
