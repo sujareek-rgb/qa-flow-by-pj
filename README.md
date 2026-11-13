@@ -2,7 +2,11 @@
 
 Claude skill: project-aware QA flow for OLS and Pyrite (PYR). One entry point to create TCs, review TCs and execute tests, applying each project's own rules.
 
-It delegates to Helix workflows (`tc-fe-prep-workflow`, `tc-api-prep-workflow`, `tc-review-workflow`, `tc-change-format-workflow`), so Helix must be installed.
+## Prerequisite: Helix
+
+**Install Helix first.** This skill does not work on its own. It delegates to Helix workflows (`tc-fe-prep-workflow`, `tc-api-prep-workflow`, `tc-review-workflow`, `tc-change-format-workflow`, `create-bug-workflow`, `retest-bug-workflow`) and reads Helix reference files (`session-start-context.md`, `qa-closing-shared.md`). Without Helix, only the manual execute flow (`references/execute.md`) and the OLS/PYR rules work.
+
+Helix: https://github.com/Thitic9203/helix (install steps are in its README).
 
 ## Install
 
