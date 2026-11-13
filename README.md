@@ -1,4 +1,4 @@
-# qa-flow-by-pj
+# tc-by-project
 
 Claude skill: project-aware QA flow for OLS and Pyrite (PYR). One entry point to create TCs, review TCs and execute tests, applying each project's own rules.
 
@@ -13,7 +13,7 @@ Helix: https://github.com/Thitic9203/helix (install steps are in its README).
 Symlink this repo as a skill folder:
 
 ```bash
-ln -s "$PWD" ~/.claude/skills/qa-flow-by-pj
+ln -s "$PWD" ~/.claude/skills/tc-by-project
 ```
 
 ## Qase token

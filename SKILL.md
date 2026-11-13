@@ -1,9 +1,9 @@
 ---
-name: qa-flow-by-pj
-description: Project-aware QA flow for OLS and Pyrite (PYR) — create test cases, review test cases, execute tests — applying each project's own TC rules, targets and format on top of the Helix workflows. Use when the user gives an OLS-xxx or PYR-xxx ticket and asks to write TCs, review TCs, run/execute the tests, or says /qa-flow-by-pj, "เขียน TC", "รีวิว TC", "เทสตาม TC", "updateTCSheet". Do NOT use for filing bugs, retesting a dev fix, or test data prep — those go straight to their Helix workflow.
+name: tc-by-project
+description: Project-aware QA flow for OLS and Pyrite (PYR) — create test cases, review test cases, execute tests — applying each project's own TC rules, targets and format on top of the Helix workflows. Use when the user gives an OLS-xxx or PYR-xxx ticket and asks to write TCs, review TCs, run/execute the tests, or says /tc-by-project, "เขียน TC", "รีวิว TC", "เทสตาม TC", "updateTCSheet". Do NOT use for filing bugs, retesting a dev fix, or test data prep — those go straight to their Helix workflow.
 metadata:
   proactive_triggers:
-    - /qa-flow-by-pj
+    - /tc-by-project
     - เขียน TC
     - รีวิว TC
     - เทสตาม TC
@@ -42,7 +42,7 @@ If the message names the job, announce the route in one line and go. If not, ask
 
 ## Step 3 — Run with the project overlay
 
-1. Announce: `Using **qa-flow-by-pj** → {project} · {job} → {workflow}.`
+1. Announce: `Using **tc-by-project** → {project} · {job} → {workflow}.`
 2. Load the delegated workflow and follow it completely.
 3. Apply the project profile as an overlay: targets (Qase / Drive / sheet), Test Case Type values, ID format, glossary, ordering, definition of done. Where profile and workflow disagree, the profile wins — say so in one line when it changes the output.
 4. Before writing anything, check whether this ticket already has a sheet / folder / Qase suite (see the profile's reuse rule). Update in place; never duplicate.
